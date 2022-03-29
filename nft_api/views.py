@@ -17,3 +17,12 @@ class NftView(generics.RetrieveAPIView):
 class NftList(generics.ListAPIView):
     queryset = Nft.objects.all()
     serializer_class = NftSerializer
+
+class CollectionList(generics.ListAPIView):
+    queryset = Collection.objects.all()
+    serializer_class = CollectionSerializer
+
+class CollectionView(generics.RetrieveAPIView):
+    queryset = Collection.objects.all()
+    serializer_class = CollectionSerializer
+    lookup_field = 'uuid'
