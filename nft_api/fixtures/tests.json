@@ -1,0 +1,104 @@
+[
+{
+    "model": "nft_api.user",
+    "pk": 1,
+    "fields": {
+        "user_wallet": "Manu Wallet"
+    }
+},
+{
+    "model": "nft_api.collection",
+    "pk": "2357a6e1-c5d4-445a-b217-9378bb488667",
+    "fields": {
+        "name": "Marvel",
+        "descritption": "Marvel collection of Nfts. Spidy, iron man and more",
+        "creator": 1,
+        "creator_network": "Ethereum"
+    }
+},
+{
+    "model": "nft_api.collection",
+    "pk": "d186dbcb-2afc-4bdb-9661-08176717cff7",
+    "fields": {
+        "name": "Pokemon",
+        "descritption": "Pokemon NFT collection",
+        "creator": 1,
+        "creator_network": "Ethereum"
+    }
+},
+{
+    "model": "nft_api.nft",
+    "pk": "charizard",
+    "fields": {
+        "name": "Charizard nft",
+        "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+        "external_link": "https://www.pokemon.com/uk/pokedex/charizard",
+        "description": "charizard amazing nft",
+        "collection": "d186dbcb-2afc-4bdb-9661-08176717cff7",
+        "supply": 2,
+        "royalties": "25.00",
+        "creation_date": "2022-03-29T17:53:16.412Z",
+        "buyer": "Test wallet"
+    }
+},
+{
+    "model": "nft_api.nft",
+    "pk": "ironman",
+    "fields": {
+        "name": "Ironman nft",
+        "picture": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg/revision/latest?cb=20190423175213",
+        "external_link": "https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man",
+        "description": "ironman amazing nft",
+        "collection": "2357a6e1-c5d4-445a-b217-9378bb488667",
+        "supply": 2,
+        "royalties": "12.00",
+        "creation_date": "2022-03-29T17:59:26.357Z",
+        "buyer": "Test wallet"
+    }
+},
+{
+    "model": "nft_api.nft",
+    "pk": "mew",
+    "fields": {
+        "name": "Mew nft",
+        "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
+        "external_link": "https://www.pokemon.com/uk/pokedex/mew",
+        "description": "mew amazing nft",
+        "collection": "d186dbcb-2afc-4bdb-9661-08176717cff7",
+        "supply": 20,
+        "royalties": "34.00",
+        "creation_date": "2022-03-29T17:54:08.570Z",
+        "buyer": "Test wallet"
+    }
+},
+{
+    "model": "nft_api.nft",
+    "pk": "pickachu",
+    "fields": {
+        "name": "Pickachu nft",
+        "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+        "external_link": "https://www.pokemon.com/uk/pokedex/pikachu",
+        "description": "pickachu amazing nft",
+        "collection": "d186dbcb-2afc-4bdb-9661-08176717cff7",
+        "supply": 4,
+        "royalties": "15.00",
+        "creation_date": "2022-03-29T17:51:20.664Z",
+        "buyer": "Test wallet"
+    }
+},
+{
+    "model": "nft_api.nft",
+    "pk": "spiderman",
+    "fields": {
+        "name": "Spiderman nft",
+        "picture": "https://static.wikia.nocookie.net/spiderman/images/a/ad/Peter_Parker_%28Earth-616%29_017.png/revision/latest?cb=20210807043502",
+        "external_link": "https://spiderman.fandom.com/wiki/Peter_Parker_(Earth-616)",
+        "description": "spiderman amazing nft",
+        "collection": "2357a6e1-c5d4-445a-b217-9378bb488667",
+        "supply": 1,
+        "royalties": "10.00",
+        "creation_date": "2022-03-29T17:58:14.052Z",
+        "buyer": "Test wallet"
+    }
+}
+]

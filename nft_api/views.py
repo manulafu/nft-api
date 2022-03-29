@@ -12,7 +12,8 @@ class NftMintView(generics.CreateAPIView):
 class NftView(generics.RetrieveAPIView):
     queryset = Nft.objects.all()
     serializer_class = NftSerializer
+    lookup_field = 'asset_id'
 
 class NftList(generics.ListAPIView):
-    queryset = Nft.objects.all().order_by('-creation_date')
+    queryset = Nft.objects.all()
     serializer_class = NftSerializer

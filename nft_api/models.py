@@ -31,7 +31,7 @@ class Nft(models.Model):
     name = models.CharField(max_length=255)
     picture = models.URLField()
     external_link = models.URLField()
-    descritption = models.TextField()
+    description = models.TextField()
     collection = models.ForeignKey(Collection, related_name='nfts', on_delete=models.CASCADE)
     supply = models.PositiveBigIntegerField()
     royalties = models.DecimalField(max_digits=5, decimal_places=2, default=0, validators=PERCENTAGE_VALIDATOR)
@@ -40,3 +40,6 @@ class Nft(models.Model):
 
     def __str__(self):
         return f'{self.name} from {self.collection.name}'
+
+    class Meta:
+        ordering = ('-creation_date', )
